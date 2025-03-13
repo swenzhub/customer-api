@@ -19,8 +19,10 @@ type Response struct {
 func List(branch string) Response {
 	if strings.ToLower(branch) == "kbtg" {
 		customers := []Customer{
-			{Name: "John", Age: 25},
-			{Name: "Jane", Age: 40},
+			{Name: "Gun", Age: 25},
+			{Name: "Ann", Age: 40},
+			{Name: "Happy", Age: 80},
+			{Name: "Ending", Age: 1},
 		}
 		return Response{Customers: customers, Total: len(customers)}
 	}
